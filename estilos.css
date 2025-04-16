@@ -1,37 +1,128 @@
-body {
-    background-color: rgba(158, 158, 158, 0.8); /* Fondo con opacidad */
-    margin: 0;
-    padding: 0;
+    body {
+        background-image: url(R.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgba(172, 172, 172, 0.8); 
+        margin: 0;
+        padding: 0;
+        font-family: 'Special Gothic', sans-serif;
+        font-size: 15px;
+    }
 
+    main {
+        padding: 10px;
+        text-align: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 100vh; 
+        width: 100vw;
+        padding: 2rem;
+    }
+
+    div {
+        background-color: white;
+        width: 300px; 
+        height: 300px; 
+        border-radius: 15px;
+        display: inline-block; 
+        margin: 0.5em; 
+        box-sizing: border-box; 
+        padding: 1em;
+    }
+
+    div h1 {
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    div img {
+        height: 240px;
+        padding: 2px;
+        object-fit: cover;
+    }
+
+    /*COLORES HEXADECIMALES*/
+
+    .colores{
+        background-color: #FFD700;
+        box-shadow: 2 4px 8px rgba(121, 121, 121, 0.5); 
+    }
+
+    .color-hexadecimal-primero {
+        background-color: aqua;
+    }
+
+    .color-hexadecimal-segundo{
+        background-color: violet;
+    }
+
+    .color-hexadecimal-tercero{
+        background-color: green;
+    }
+
+    /*GRADIENTES LINEAL Y RADIAL*/
+
+    .gradiente-lineal{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px black;
+        background: linear-gradient(to right, blue, violet, purple);
+    }
+
+    .gradiente-radial{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px white;
+        color: red;
+        background: radial-gradient(circle, red, purple, black);
+    }
+
+    /*COLORES RGB*/
+
+    .color-rgb-primero{
+        background-color: rgb(50, 210, 118);
+    }
+
+    .color-rgb-segundo{
+        background-color: rgb(9, 225, 236);
+    }
+
+    .color-rgb-tercero{
+        background-color: rgb(134, 36, 165);
+        box-shadow: 0 4px 5px violet;
+    }
+
+    .color-rgb-cuarto{
+        background-color: rgb(196, 45, 84 );
+    }
+
+    .color-rgb-quinto{
+        background-color: rgb(12, 179, 174 );
+    }
+
+    /*INSERTAR NUEVA IMAGEN*/
+    .nueva-imagen {
+        max-width: 300px;
+        height: auto;
+    }
+
+    /*MEDIDAS px, em, rem*/
+.pixeles{
+    font-size: 10px; /*Este es un tipo de medida fija, es decir cambia dependiendo del tamaño que se le ponga*/
 }
 
-main {
-    text-align: center;
-    padding: 2rem;
+.texto-medida-em{
+    font-size: 1.5em; /*Este tipo de medida se adapta a la medida del elemento padre es decir 15px
+    asi que 1em equivale a 15px en este caso este equivale a 22.5px*/
 }
 
-div {
-    background-color: white;
-    width: 400px; 
-    height: 300px; 
-    border-radius: 15px;
-    display: inline-block; 
-    margin: 5px; 
-    box-sizing: border-box; 
-    overflow: hidden;
-    vertical-align: top;
-}
-
-div h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-}
-
-div img {
-    height: 200px;
-    padding: 10px;
-    object-fit: cover;
+.texto-medida-rem{
+    font-size: 1.5rem; /*Este tipo de medida es parecida a la medida "em", solo que esta medida
+    se acopla al elemento raiz, asi que en este caso este tipo de letra es 1.5 veces mayor al elemento raiz*/
 }
