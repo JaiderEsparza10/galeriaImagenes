@@ -1,5 +1,5 @@
 
-    
+    /*En este caso estamos agregando la imagen y diferentes propiedades para ajustar el body de nuestra galeria */
     body {
         background-image: url(R.jpg);
         background-position: center;
@@ -12,6 +12,8 @@
         font-size: 15px;
     }
 
+    /*Este es el main el contenedor padre de la galeria de imagenes, aqui es donde ajustamos el lugar y la cantidad de cards
+    que van a aparecer en la pagina*/
     main {
         padding: 10px;
         text-align: center;
@@ -23,6 +25,7 @@
         background-color: rgba(27, 136, 179, 0.5);
     }
 
+    /*Pasamos al div que es la etiqueta que contiene todas las imagenes, en esta etiqueta se modifica el color, radio entre otras cosas*/
     div {
         background-color: white;
         width: 300px; 
@@ -34,6 +37,9 @@
         padding: 1em;
     }
 
+
+    /*Ahora usamos un selector de decendencia para modificar los Titulos de las cards
+    le agregamos estilos y el tamaño a la letra*/
     div h1 {
         font-size: 1.2rem;
         font-style: italic;
@@ -43,6 +49,7 @@
         padding: 10px;
     }
 
+    /*Ahora usando el mismo selector anterior, le agregamos un alto a la imagen y una posición para que no se salga del contenedor*/
     div img {
         height: 240px;
         padding: 2px;
